@@ -22,7 +22,7 @@ Access the current weather conditions for any city. By default it will use the c
 returned by Open Weather Map.
 
 ```javascript
-Weather.getCurrent("York", function(current) {
+Weather.getCurrentCityCountry("York", 'GB', function(current) {
   console.log(
     ["currently:",current.temperature(),"and",current.conditions()].join(" ")
   );
